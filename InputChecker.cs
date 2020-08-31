@@ -27,7 +27,7 @@ namespace Computershare_Code_Test
       
             while(!int.TryParse(input, out num))
             {
-                Console.WriteLine("\nThis is not a valid number! Try again");
+                Console.WriteLine("\nThis is not a valid number! Try again\n");
                 input = Console.ReadLine();
             }
 
@@ -43,7 +43,7 @@ namespace Computershare_Code_Test
 
             while (numInRange <= 0 || numInRange > 10)
             {
-                 Console.WriteLine("\nHey that's not cool. I said between 1 and 10! Try again.");
+                 Console.WriteLine("\nHey that's not cool. I said between 1 and 10! Try again.\n");
                 numAsString = Console.ReadLine();
                 numInRange = Convert.ToInt32(numAsString);
             }
@@ -65,7 +65,7 @@ namespace Computershare_Code_Test
                 {
                     if (x == null)
                     {
-                        Console.WriteLine("\nI'm sorry, it looks like you didn't type in anything. Please try again.");
+                        Console.WriteLine("\nI'm sorry, it looks like you didn't type in anything. Please try again.\n");
                     }
                 }
 

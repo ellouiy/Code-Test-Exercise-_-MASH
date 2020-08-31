@@ -9,7 +9,6 @@ namespace Computershare_Code_Test
 {
     class GameQuestion
     {
-        InputChecker iChecker = new InputChecker();
         int MagicNumber;
         public bool Answered;
         public string FinalAnswer;
