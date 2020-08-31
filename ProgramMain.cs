@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Computershare_Code_Test
 {
@@ -15,18 +14,6 @@ namespace Computershare_Code_Test
             string pickedNumAsString;
             int pickedNumAsInt;
 
-            /*
-                        Console.WriteLine("\nPress Escape on your keyboard to exit at any point");
-
-                        do
-                        {
-                            while (!Console.KeyAvailable)            
-                            {
-
-                            }
-                        } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
-
-            */
 
             Console.WriteLine("\n WELCOME TO...");
             Console.WriteLine("\n     #     #    #     #####  #     # " +
@@ -36,9 +23,8 @@ namespace Computershare_Code_Test
                 "\n     #     # #######       # #     # " +
                 "\n     #     # #     # #     # #     # " +
                 "\n     #     # #     #  #####  #     #  ");
+                                                 
             Console.WriteLine("\n A timeless school game classic, MASH stands for Mansion, Apartment, Shack, House.\n Choose a number, type in a list of answers to each question\n And watch as your future is predicted...");
-
-
 
             //Name
             Console.WriteLine("\nWhat's your name?\n");
@@ -53,13 +39,11 @@ namespace Computershare_Code_Test
            // PersonQuestion personQ = new PersonQuestion(nameInput, ageInputAsInt);
 
             //Pick a Number
-            Console.WriteLine("\nCool. You're " + ageInputAsInt + ". Looking good. Now pick a magic number between 1 and 10");
+            Console.WriteLine("\nCool. You're " + ageInputAsInt + ". Looking good for your age! Now pick a magic number between 1 and 10");
             pickedNumAsString = Console.ReadLine();
-            
             iChecker.CheckIntExists(pickedNumAsString, true);
 
             pickedNumAsInt = Convert.ToInt32(iChecker.numInRange);
-           
             user = new Person(ageInputAsInt, nameInput, pickedNumAsInt);
 
             //Abode
@@ -127,12 +111,6 @@ namespace Computershare_Code_Test
             {
                 Console.WriteLine("\n\nYou will retire in " + locationQuestion.FinalAnswer + " and live in a " + AbodeQuestion.FinalAnswer +  ". Your personal mode of transport will be a " + vehicleQuestion.FinalAnswer + ", and when you turn " + (user.Age + 1) + " you'll have a birthday meal of " + foodQuestion.FinalAnswer);
             }
-
-            
-        }
-
-        public void GamePlay()
-        {
 
         }
 

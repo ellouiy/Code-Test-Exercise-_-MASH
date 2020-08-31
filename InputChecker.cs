@@ -24,8 +24,8 @@ namespace Computershare_Code_Test
 
         public void CheckIntExists(string input, bool checkRange)
         {
-      
-            while(!int.TryParse(input, out num))
+            //https://codeasy.net/lesson/input_validation
+            while (!int.TryParse(input, out num))
             {
                 Console.WriteLine("\nThis is not a valid number! Try again\n");
                 input = Console.ReadLine();
@@ -45,6 +45,7 @@ namespace Computershare_Code_Test
             {
                  Console.WriteLine("\nHey that's not cool. I said between 1 and 10! Try again.\n");
                 numAsString = Console.ReadLine();
+                CheckIntExists(numAsString, true);
                 numInRange = Convert.ToInt32(numAsString);
             }
         }
